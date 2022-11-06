@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KaffeeApp.Page2"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="shop" />
+            <Label TextColor="White" FontAttributes="Bold" FontSize="55" Text="Kafe Werkstatt" Padding="10"/>
+            <Label TextColor="White" FontSize="Large" Padding="15" Text="41 Schwanz st &#10;Neumarkt &#10;Gullenberg &#10;2345">
+
+            </Label>
+            <Label TextColor="White" FontSize="Large" Text="+43 5 678 9232" Padding="15"/>
+            <Label TextColor="White" FontSize="Large" Text="richard@werkstattcafe.co.nz" Padding="15"/>
+            
+            <Label TextColor="Orange" FontSize="Medium" Text="Check our socials" HorizontalTextAlignment="Center"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <ImageButton Grid.Column="0" Source="Instagram_logo.png" HeightRequest="100" WidthRequest="100" BackgroundColor="Black"/>
+                <ImageButton Grid.Column="1" Source="FB_logo.png"  HeightRequest="100" WidthRequest="100" BackgroundColor="White"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
